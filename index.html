@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tes Hosting | Kedai Kopi Senja</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #FAF7F0;
+            color: #2A1A10;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            background-color: #FFFFFF;
+            border: 2px solid #EAE4D7;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(31, 20, 14, 0.05);
+            max-width: 500px;
+            width: 100%;
+        }
+        .icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            animation: bounce 2s infinite;
+        }
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 12px;
+            color: #C2410C;
+        }
+        p {
+            font-size: 1rem;
+            color: #8C7869;
+            margin-bottom: 24px;
+            line-height: 1.6;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #D97706;
+            color: #FFFFFF;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            font-size: 1rem;
+        }
+        .btn:hover {
+            background-color: #B45309;
+            transform: translateY(-2px);
+        }
+        .footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px dashed #EAE4D7;
+            font-size: 0.8rem;
+            color: #8C7869;
+        }
+        .footer strong {
+            color: #2A1A10;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">🚀</div>
+        <h1>Hosting GitHub Pages Berhasil!</h1>
+        <p>Halo Daffa & Kelompok 1! Jika halaman sederhana ini sudah muncul saat kamu mengakses tautan di peramban, berarti konfigurasi hosting gratis kamu sudah aktif 100%.</p>
+        
+        <button class="btn" onclick="showMessage()">Klik untuk Tes Respon</button>
+        
+        <div class="footer">
+            <p>UAS Perancangan Laman - Kelompok 1</p>
+            <p>Ketua: <strong>Muhamad Daffa Firdaus</strong> (NPM: 6322501018)</p>
+        </div>
+    </div>
+
+    <script>
+        function showMessage() {
+            alert("Koneksi JavaScript Berhasil! Website interaktif kamu siap dibangun.");
+        }
+    </script>
+</body>
+</html>
