@@ -3,100 +3,449 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tes Hosting | Kedai Kopi Senja</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #FAF7F0;
-            color: #2A1A10;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            text-align: center;
-            padding: 20px;
-        }
-        .container {
-            background-color: #FFFFFF;
-            border: 2px solid #EAE4D7;
-            padding: 40px;
-            border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(31, 20, 14, 0.05);
-            max-width: 500px;
-            width: 100%;
-        }
-        .icon {
-            font-size: 4rem;
-            margin-bottom: 20px;
-            animation: bounce 2s infinite;
-        }
-        h1 {
-            font-size: 1.8rem;
-            margin-bottom: 12px;
-            color: #C2410C;
-        }
-        p {
-            font-size: 1rem;
-            color: #8C7869;
-            margin-bottom: 24px;
-            line-height: 1.6;
-        }
-        .btn {
-            display: inline-block;
-            background-color: #D97706;
-            color: #FFFFFF;
-            padding: 12px 24px;
-            border-radius: 8px;
-            font-weight: bold;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            border: none;
-            font-size: 1rem;
-        }
-        .btn:hover {
-            background-color: #B45309;
-            transform: translateY(-2px);
-        }
-        .footer {
-            margin-top: 30px;
-            padding-top: 20px;
-            border-top: 1px dashed #EAE4D7;
-            font-size: 0.8rem;
-            color: #8C7869;
-        }
-        .footer strong {
-            color: #2A1A10;
-        }
-        @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
-    </style>
+    <title>Kedai Kopi Senja | Workspace & Social Space Ciumbuleuit Bandung</title>
+    
+    <!-- Meta SEO -->
+    <meta name="description" content="Kedai Kopi Senja Ciumbuleuit Bandung: Ruang produktif berkonsep Dual-Vibe. Workspace tenang di pagi hari & Social space hangat untuk nongkrong di sore hari. Tanpa biaya tambahan.">
+    <meta name="keywords" content="kedai kopi bandung, cafe ciumbuleuit, coworking space bandung, cafe WFC, kopi susu gula aren, cold brew bandung, tempat nongkrong lofi">
+    <meta name="author" content="Kelompok 1 Perancangan Laman UNPAR">
+    
+    <!-- Open Graph (Facebook/WhatsApp Share preview) -->
+    <meta property="og:title" content="Kedai Kopi Senja | Workspace & Social Space Ciumbuleuit">
+    <meta property="og:description" content="Nikmati produktivitas pagi hari yang tenang dan kehangatan nongkrong sore hari dalam satu kedai kopi berkonsep Dual-Vibe.">
+    <meta property="og:image" content="assets/kopi_senja_hero.png">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="container">
-        <div class="icon">🚀</div>
-        <h1>Hosting GitHub Pages Berhasil!</h1>
-        <p>Halo Daffa & Kelompok 1! Jika halaman sederhana ini sudah muncul saat kamu mengakses tautan di peramban, berarti konfigurasi hosting gratis kamu sudah aktif 100%.</p>
-        
-        <button class="btn" onclick="showMessage()">Klik untuk Tes Respon</button>
-        
-        <div class="footer">
-            <p>UAS Perancangan Laman - Kelompok 1</p>
-            <p>Ketua: <strong>Muhamad Daffa Firdaus</strong> (NPM: 6322501018)</p>
-        </div>
-    </div>
+<body class="mode-pagi">
 
-    <script>
-        function showMessage() {
-            alert("Koneksi JavaScript Berhasil! Website interaktif kamu siap dibangun.");
-        }
-    </script>
+    <!-- HEADER / NAVIGATION -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="#" class="logo-area" id="brand-logo">
+                <img src="assets/kopi_senja_logo.png" alt="Logo Kedai Kopi Senja" class="logo-img">
+                <div class="logo-text">
+                    <span class="brand-name">Kopi Senja</span>
+                    <span class="brand-tagline">Dual-Vibe Space</span>
+                </div>
+            </a>
+            
+            <nav class="main-nav" id="navigation-menu">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Beranda</a></li>
+                    <li><a href="#about" class="nav-link">Konsep</a></li>
+                    <li><a href="#menu" class="nav-link">Katalog Menu</a></li>
+                    <li><a href="#faq" class="nav-link">Fasilitas & FAQ</a></li>
+                    <li><a href="#booking" class="nav-link btn-nav-cta">Pesan Meja</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Vibe Switcher Widget in Header -->
+            <div class="vibe-toggle-container">
+                <span class="vibe-label label-pagi"><i class="fa-regular fa-sun"></i> Pagi</span>
+                <button class="vibe-switch" id="global-vibe-toggle" aria-label="Ganti suasana halaman">
+                    <span class="vibe-switch-ball"></span>
+                </button>
+                <span class="vibe-label label-sore"><i class="fa-regular fa-moon"></i> Sore</span>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="menu-toggle-btn" aria-label="Buka Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="home" class="hero-section">
+            <div class="hero-bg-overlay"></div>
+            <div class="container hero-container">
+                <div class="hero-badge">
+                    <span class="badge-text" id="dynamic-hero-badge"><i class="fa-solid fa-briefcase"></i> Mode Produktif Aktif</span>
+                </div>
+                
+                <h1 class="hero-title" id="dynamic-hero-title">
+                    Mulai Pagi dengan <span class="highlight">Fokus & Produktivitas</span>
+                </h1>
+                
+                <p class="hero-desc" id="dynamic-hero-desc">
+                    Nikmati Wi-Fi berkecepatan tinggi, colokan listrik di setiap sudut, dan atmosfer tenang untuk bekerja jarak jauh (WFC) dari jam 09:00 s.d. 15:00.
+                </p>
+                
+                <div class="hero-ctas">
+                    <a href="#booking" class="btn btn-primary" id="hero-primary-cta"><i class="fa-solid fa-chair"></i> Pesan Working Space</a>
+                    <a href="#menu" class="btn btn-secondary" id="hero-secondary-cta"><i class="fa-solid fa-mug-hot"></i> Lihat Menu Sarapan</a>
+                </div>
+                
+                <!-- Floating Card Promo -->
+                <div class="hero-floating-promo" id="dynamic-floating-promo">
+                    <div class="promo-icon"><i class="fa-solid fa-percent"></i></div>
+                    <div class="promo-text">
+                        <h4 id="promo-title">Paket WFC Pagi</h4>
+                        <p id="promo-desc">Kopi Susu Aren + Butter Croissant hanya Rp40.000 (09:00 - 12:00)</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Wave separator -->
+            <div class="hero-wave">
+                <svg data-name="Layer 1" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0C26.9,8.75,57.05,18.3,90.47,26.85,180.78,50,263.77,64.29,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- ABOUT / CONCEPT SECTION -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="sub-title">Konsep Unik</span>
+                    <h2 class="main-title">Satu Ruang, Dua Jiwa (Dual-Vibe)</h2>
+                    <p class="section-desc">Kedai Kopi Senja memahami kebutuhanmu yang dinamis. Kami merancang ruang fisik dan atmosfer suara yang berubah secara otomatis mengikuti siklus harimu.</p>
+                </div>
+                
+                <div class="about-grid">
+                    <!-- Left: Card Concept Pagi -->
+                    <div class="concept-card concept-pagi">
+                        <div class="concept-badge"><i class="fa-solid fa-sun"></i> 09:00 - 15:00</div>
+                        <h3>Workspace Produktif</h3>
+                        <p>Atmosfer hening terfokus dengan musik instrumental lofi ber-volume rendah, pencahayaan alami yang terang, dan akses penuh ke Wi-Fi bisnis khusus untuk memastikan rapat daring dan tugas kuliahmu berjalan lancar tanpa hambatan.</p>
+                        <ul class="concept-features">
+                            <li><i class="fa-solid fa-circle-check"></i> Wi-Fi Bisnis Terpisah (Up to 100 Mbps)</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Stop Kontak di Setiap Kolom Meja</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Silent Zone (Bebas Kebisingan)</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Center Visual: The Transition Ring -->
+                    <div class="transition-visual">
+                        <div class="visual-ring">
+                            <div class="ring-core">
+                                <i class="fa-solid fa-rotate animate-spin"></i>
+                                <span class="ring-text">TRANSISI OTOMATIS</span>
+                            </div>
+                        </div>
+                        <div class="visual-desc">
+                            Pada pukul <strong>15:00 WIB</strong>, pencahayaan lampu meredup hangat (*warm light*) dan musik bertransisi menjadi lofi vokal/akustik santai.
+                        </div>
+                    </div>
+                    
+                    <!-- Right: Card Concept Sore -->
+                    <div class="concept-card concept-sore">
+                        <div class="concept-badge"><i class="fa-solid fa-moon"></i> 15:00 - 22:00</div>
+                        <h3>Social Space Hangat</h3>
+                        <p>Waktunya melepas penat dan bersenang-senang. Suasana bertukar menjadi hangat dan intim, sangat cocok untuk mengobrol santai bersama teman, berdiskusi kelompok, bermain *board game*, atau menikmati seduhan manual brew sore hari.</p>
+                        <ul class="concept-features">
+                            <li><i class="fa-solid fa-circle-check"></i> Musik Lofi Vokal & Akustik Hangat</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Meja Komunitas & Board Games Lengkap</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Sambal Dadak & Camilan Hangat Sore</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MENU SECTION -->
+        <section id="menu" class="menu-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="sub-title">Pilihan Terbaik</span>
+                    <h2 class="main-title">Katalog Menu & Harga</h2>
+                    <p class="section-desc">Semua menu kami dibuat segar menggunakan bahan lokal berkualitas tinggi dengan harga ramah kantong mahasiswa Ciumbuleuit.</p>
+                </div>
+                
+                <!-- Filter Tabs -->
+                <div class="menu-filters">
+                    <button class="filter-btn active" data-filter="all">Semua Menu</button>
+                    <button class="filter-btn" data-filter="pagi"><i class="fa-solid fa-sun"></i> Spesial Pagi (Sarapan)</button>
+                    <button class="filter-btn" data-filter="sore"><i class="fa-solid fa-moon"></i> Spesial Sore (Nongkrong)</button>
+                </div>
+                
+                <!-- Menu Grid (Filled by JS) -->
+                <div class="menu-grid" id="menu-container">
+                    <!-- Placeholder loading state -->
+                    <div class="menu-loading">
+                        <i class="fa-solid fa-spinner fa-spin"></i> Memuat menu lezat...
+                    </div>
+                </div>
+                
+                <div class="menu-notice">
+                    <p><i class="fa-solid fa-circle-info"></i> <strong>Catatan Pemilik:</strong> Menu kopi botolan (*Ready-to-Drink*) dan biji kopi (*Beans*) selalu tersedia setiap saat sepanjang hari.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ & FACILITIES SECTION -->
+        <section id="faq" class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="sub-title">Kenyamanan Utama</span>
+                    <h2 class="main-title">Fasilitas & Tanya Jawab</h2>
+                    <p class="section-desc">Kami transparan mengenai fasilitas yang kami miliki demi kenyamanan kerja dan nongkrong kamu.</p>
+                </div>
+                
+                <div class="faq-grid">
+                    <!-- Left: Facility Metrics -->
+                    <div class="facility-metrics-card">
+                        <h3><i class="fa-solid fa-square-poll-horizontal"></i> Spesifikasi Teknis Ruang</h3>
+                        
+                        <div class="metric-item">
+                            <div class="metric-info">
+                                <span>Kecepatan Wi-Fi Workspace</span>
+                                <span class="metric-val">50 Mbps</span>
+                            </div>
+                            <div class="metric-bar"><div class="metric-progress" style="width: 50%;"></div></div>
+                        </div>
+                        
+                        <div class="metric-item">
+                            <div class="metric-info">
+                                <span>Kepadatan Stop Kontak (Per Meja)</span>
+                                <span class="metric-val">2 Lubang Colokan</span>
+                            </div>
+                            <div class="metric-bar"><div class="metric-progress" style="width: 100%;"></div></div>
+                        </div>
+                        
+                        <div class="metric-item">
+                            <div class="metric-info">
+                                <span>Kapasitas Area Workspace (Indoor AC)</span>
+                                <span class="metric-val">30 Kursi</span>
+                            </div>
+                            <div class="metric-bar"><div class="metric-progress" style="width: 75%;"></div></div>
+                        </div>
+                        
+                        <div class="metric-item">
+                            <div class="metric-info">
+                                <span>Kapasitas Area Social (Semi-Outdoor)</span>
+                                <span class="metric-val">40 Kursi</span>
+                            </div>
+                            <div class="metric-bar"><div class="metric-progress" style="width: 85%;"></div></div>
+                        </div>
+                        
+                        <div class="about-beans-block">
+                            <h4><i class="fa-solid fa-seedling"></i> Biji Kopi Lokal Pilihan</h4>
+                            <p>Kami bangga menyeduh biji kopi lokal 100% Indonesia hasil kolaborasi langsung dengan petani kopi di daerah Ciwidey dan Preanger, Jawa Barat. Disangrai dengan profil rasa seimbang untuk menjaga produktivitas harianmu.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Right: Accordion FAQ -->
+                    <div class="faq-accordion">
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span>Apakah ada biaya tambahan untuk memakai internet/workspace?</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                            <div class="accordion-body">
+                                <p>Tidak ada biaya sewa tempat! Kamu cukup memesan satu minuman atau makanan apa saja di kasir untuk mendapatkan akses Wi-Fi bisnis gratis sepanjang hari tanpa batas waktu.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span>Bagaimana jika saya ingin bekerja di sore hari?</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                            <div class="accordion-body">
+                                <p>Tentu boleh! Area Workspace Indoor AC kami tetap dibuka untuk bekerja hingga kedai tutup. Namun, harap maklum bahwa musik latar belakang mulai pukul 15.00 akan bertransisi ke mode nongkrong yang sedikit lebih kasual.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span>Apakah foto-foto produk di web ini asli?</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                            <div class="accordion-body">
+                                <p>Ya, semua foto produk di website ini diambil secara otentik langsung dari menu yang disajikan sehari-hari menggunakan kamera handphone di kedai kami, tanpa rekayasa digital berlebihan, agar kamu mendapatkan visual yang apa adanya.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span>Apakah menerima reservasi untuk kerja kelompok atau acara khusus?</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                            <div class="accordion-body">
+                                <p>Ya! Kami memiliki meja komunitas panjang yang bisa dipesan terlebih dahulu untuk kerja kelompok atau rapat internal. Gunakan formulir pemesanan di bawah untuk reservasi tempat secara gratis via WhatsApp.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BOOKING & RESERVATION SECTION -->
+        <section id="booking" class="booking-section">
+            <div class="container">
+                <div class="booking-grid">
+                    <!-- Left Column: Form -->
+                    <div class="booking-form-container">
+                        <div class="form-header">
+                            <span class="form-tag"><i class="fa-solid fa-paper-plane"></i> Jalur Konversi Cepat</span>
+                            <h2>Reservasi Meja & Menu</h2>
+                            <p>Isi formulir reservasi di bawah untuk mengamankan meja kamu secara gratis. Detail pesanan akan langsung dialihkan ke WhatsApp kasir kami agar langsung diproses.</p>
+                        </div>
+                        
+                        <form id="whatsapp-booking-form" class="booking-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="booking-name"><i class="fa-solid fa-user"></i> Nama Lengkap</label>
+                                    <input type="text" id="booking-name" required placeholder="Contoh: Daffa Firdaus">
+                                </div>
+                                <div class="form-group">
+                                    <label for="booking-phone"><i class="fa-solid fa-phone"></i> Nomor WhatsApp</label>
+                                    <input type="tel" id="booking-phone" required placeholder="Contoh: 08123456789">
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="booking-date"><i class="fa-solid fa-calendar-days"></i> Tanggal Kunjungan</label>
+                                    <input type="date" id="booking-date" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="booking-time"><i class="fa-solid fa-clock"></i> Jam Rencana Tiba</label>
+                                    <select id="booking-time" required>
+                                        <option value="" disabled selected>Pilih Jam Rencana Datang</option>
+                                        <optgroup label="Sesi Workspace Pagi (Tenang)">
+                                            <option value="09:00">09:00 WIB (Sesi Pagi Buka)</option>
+                                            <option value="10:30">10:30 WIB</option>
+                                            <option value="12:00">12:00 WIB (Makan Siang)</option>
+                                            <option value="13:30">13:30 WIB</option>
+                                        </optgroup>
+                                        <optgroup label="Sesi Social Sore (Hangat)">
+                                            <option value="15:00">15:00 WIB (Transisi Sore)</option>
+                                            <option value="16:30">16:30 WIB</option>
+                                            <option value="18:30">18:30 WIB (Sesi Malam)</option>
+                                            <option value="20:00">20:00 WIB</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="booking-pax"><i class="fa-solid fa-users"></i> Jumlah Orang</label>
+                                    <select id="booking-pax" required>
+                                        <option value="1 Orang">1 Orang (Meja Personal)</option>
+                                        <option value="2 Orang">2 Orang</option>
+                                        <option value="4 Orang">4 Orang (Meja Kelompok)</option>
+                                        <option value="Lebih dari 4 Orang">Lebih dari 4 Orang (Meja Rapat)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="booking-vibe"><i class="fa-solid fa-wand-magic-sparkles"></i> Pilihan Suasana Ruang</label>
+                                    <select id="booking-vibe" required>
+                                        <option value="Workspace Indoor (Silent)">Workspace Indoor AC (Hening/Kerja)</option>
+                                        <option value="Social Area (Semi-Outdoor)">Social Area Semi-Outdoor (Nongkrong)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="booking-notes"><i class="fa-solid fa-notes-medical"></i> Catatan Menu Tambahan (Opsional)</label>
+                                <textarea id="booking-notes" rows="3" placeholder="Tulis menu makanan/minuman yang ingin langsung disiapkan di meja ketika kamu tiba..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-submit-wa" id="form-submit-btn">
+                                <i class="fa-brands fa-whatsapp"></i> Kirim Form Pemesanan ke WhatsApp
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <!-- Right Column: Info & Maps -->
+                    <div class="booking-info-container">
+                        <div class="info-card">
+                            <h3><i class="fa-solid fa-map-location-dot"></i> Hubungi & Kunjungi Kami</h3>
+                            <p class="map-lead">Kami berlokasi di daerah strategis dekat kampus UNPAR Ciumbuleuit, Bandung. Tempat pas buat nugas kuliah atau sekadar melepas lelah.</p>
+                            
+                            <!-- Google Maps Iframe Placeholder styled beautifully -->
+                            <div class="maps-wrapper">
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.0543666289065!2d107.6048123147728!3d-6.884102995025449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6580f08cb3b%3A0xc34b711bc37043a5!2sJl.%20Ciumbuleuit%20No.94%2C%20Hegarmanah%2C%20Kec.%20Cidadap%2C%20Kota%20Bandung%2C%20Jawa%20Barat%2040141!5e0!3m2!1sid!2sid!4v1680000000000!5m2!1sid!2sid" 
+                                    width="100%" 
+                                    height="220" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy" 
+                                    referrerpolicy="no-referrer-when-downgrade"
+                                    title="Peta Kedai Kopi Senja Ciumbuleuit">
+                                </iframe>
+                            </div>
+                            
+                            <div class="contact-details">
+                                <div class="detail-item">
+                                    <div class="detail-icon"><i class="fa-solid fa-location-arrow"></i></div>
+                                    <div class="detail-txt">Jl. Ciumbuleuit No. 94, Bandung, Jawa Barat (Dekat Kampus UNPAR)</div>
+                                </div>
+                                <div class="detail-item">
+                                    <div class="detail-icon"><i class="fa-solid fa-clock"></i></div>
+                                    <div class="detail-txt">Buka Setiap Hari: 09:00 - 22:00 WIB</div>
+                                </div>
+                                <div class="detail-item">
+                                    <div class="detail-icon"><i class="fa-brands fa-instagram"></i></div>
+                                    <div class="detail-txt"><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">@kedai_kopisenja</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-brand-info">
+                <div class="footer-logo">
+                    <img src="assets/kopi_senja_logo.png" alt="Logo Kopi Senja" class="footer-logo-img">
+                    <h4>Kedai Kopi Senja</h4>
+                </div>
+                <p>Menyeimbangkan produktivitas pagi dan relaksasi sore hari dengan seduhan kopi berkualitas tinggi.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h5>Navigasi</h5>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#about">Konsep</a></li>
+                    <li><a href="#menu">Katalog Menu</a></li>
+                    <li><a href="#faq">Fasilitas</a></li>
+                    <li><a href="#booking">Pesan Meja</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-meta-academic">
+                <h5>Akademis UAS</h5>
+                <p>Website ini dikembangkan untuk tugas UAS Perancangan Laman Semester Genap 2025/2026.</p>
+                <div class="student-info">
+                    <span class="name">Muhamad Daffa Firdaus</span>
+                    <span class="npm">NPM: 6322501018</span>
+                    <span class="group">Kelompok 1 (Ketua Kelas)</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-copyright">
+            <div class="container copyright-container">
+                <p>&copy; 2026 Kedai Kopi Senja. All Rights Reserved. Kelompok 1 Bisnis Kreatif UNPAR.</p>
+                <p class="anti-slop-badge"><i class="fa-solid fa-code"></i> Kode Kustom 100% Ditulis Tangan</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
 </body>
 </html>

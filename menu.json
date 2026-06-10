@@ -1,0 +1,101 @@
+[
+  {
+    "id": "kopi-susu-aren",
+    "name": "Es Kopi Susu Aren Klasik",
+    "price": 20000,
+    "description": "Perpaduan espresso arabika, susu cair segar, dan sirup gula aren murni khas parundangan. Pas buat nemenin belajar.",
+    "category": "all",
+    "image": "assets/kopi_susu_aren.png",
+    "badge": "Terlaris"
+  },
+  {
+    "id": "kopi-hitam-tubruk",
+    "name": "Kopi Hitam Tubruk",
+    "price": 15000,
+    "description": "Seduhan kopi hitam tradisional dari biji kopi lokal pilihan yang digiling segar. Pilihan mantap untuk fokus pagi hari.",
+    "category": "pagi",
+    "image": "assets/cold_brew_bottle.png",
+    "badge": "Klasik"
+  },
+  {
+    "id": "cold-brew-latte",
+    "name": "Cold Brew Latte",
+    "price": 25000,
+    "description": "Kopi konsentrat hasil ekstraksi dingin selama 12 jam, dicampur susu segar dingin. Halus di lambung dan menyegarkan.",
+    "category": "all",
+    "image": "assets/cold_brew_bottle.png",
+    "badge": "Favorit"
+  },
+  {
+    "id": "hot-matcha",
+    "name": "Hot Matcha Latte",
+    "price": 22000,
+    "description": "Bubuk teh hijau Jepang premium yang diseduh dengan susu cair hangat dan sedikit pemanis organik. Pilihan non-kopi penenang pikiran.",
+    "category": "all",
+    "image": "assets/drip_bag_coffee.png",
+    "badge": "Non-Kopi"
+  },
+  {
+    "id": "roti-bakar-cokelat",
+    "name": "Roti Bakar Cokelat Keju",
+    "price": 18000,
+    "description": "Roti panggang mentega dengan taburan meises cokelat melimpah dan parutan keju cheddar gurih di atasnya. Menu sarapan pas.",
+    "category": "pagi",
+    "image": "assets/kopi_susu_aren.png",
+    "badge": "Sarapan"
+  },
+  {
+    "id": "croissant-butter",
+    "name": "Croissant Butter Cokelat",
+    "price": 20000,
+    "description": "Roti pastry renyah berlapis khas Prancis dengan mentega wangi dan isian lelehan cokelat hangat.",
+    "category": "pagi",
+    "image": "assets/drip_bag_coffee.png",
+    "badge": "Sarapan"
+  },
+  {
+    "id": "kentang-bbq",
+    "name": "Kentang Goreng Bumbu BBQ",
+    "price": 16000,
+    "description": "Kentang goreng renyah yang ditaburi bumbu BBQ gurih pedas manis. Teman nongkrong sore yang asyik.",
+    "category": "sore",
+    "image": "assets/cold_brew_bottle.png",
+    "badge": "Camilan"
+  },
+  {
+    "id": "pisang-madu",
+    "name": "Pisang Goreng Madu",
+    "price": 14000,
+    "description": "Pisang kepok manis berbalut tepung renyah, digoreng matang lalu disiram madu asli. Nikmat disajikan hangat saat senja.",
+    "category": "sore",
+    "image": "assets/kopi_susu_aren.png",
+    "badge": "Camilan"
+  },
+  {
+    "id": "house-blend-beans",
+    "name": "Biji Kopi House Blend (250g)",
+    "price": 50000,
+    "description": "Racikan biji kopi arabika & robusta lokal untuk konsumsi harian di rumah, menghasilkan rasa tebal dan aroma cokelat.",
+    "category": "all",
+    "image": "assets/drip_bag_coffee.png",
+    "badge": "Biji Kopi"
+  },
+  {
+    "id": "single-origin-ciwidey",
+    "name": "Biji Kopi Arabika Ciwidey (200g)",
+    "price": 60000,
+    "description": "Biji kopi single origin Arabika dari pegunungan Ciwidey Jawa Barat. Karakter rasa buah manis yang segar.",
+    "category": "all",
+    "image": "assets/drip_bag_coffee.png",
+    "badge": "Biji Kopi"
+  },
+  {
+    "id": "drip-bag-instan",
+    "name": "Kopi Drip Bag Instan (5 Pcs)",
+    "price": 35000,
+    "description": "Kemasan kopi saring siap seduh praktis untuk kamu yang sibuk atau sering bepergian.",
+    "category": "all",
+    "image": "assets/drip_bag_coffee.png",
+    "badge": "Praktis"
+  }
+]
