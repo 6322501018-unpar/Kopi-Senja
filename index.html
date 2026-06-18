@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kedai Kopi Senja | Workspace & Social Space Ciumbuleuit Bandung</title>
+    <title>Kedai Kopi Senja | Workspace & Social Space Bandung</title>
     
     <!-- Meta SEO -->
-    <meta name="description" content="Kedai Kopi Senja Ciumbuleuit Bandung: Ruang produktif berkonsep Dual-Vibe. Workspace tenang di pagi hari & Social space hangat untuk nongkrong di sore hari. Tanpa biaya tambahan.">
-    <meta name="keywords" content="kedai kopi bandung, cafe ciumbuleuit, coworking space bandung, cafe WFC, kopi susu gula aren, cold brew bandung, tempat nongkrong lofi">
-    <meta name="author" content="Kelompok 1 Perancangan Laman UNPAR">
+    <meta name="description" content="Kedai Kopi Senja Bandung: Ruang produktif berkonsep Dual-Vibe. Workspace tenang di pagi hari & Social space hangat untuk nongkrong di sore hari. Tanpa biaya tambahan.">
+    <meta name="keywords" content="kedai kopi bandung, cafe bandung, coworking space bandung, cafe WFC, kopi susu gula aren, cold brew bandung, tempat nongkrong lofi">
+    <meta name="author" content="Kelompok 1 Perancangan Laman">
     
     <!-- Open Graph (Facebook/WhatsApp Share preview) -->
-    <meta property="og:title" content="Kedai Kopi Senja | Workspace & Social Space Ciumbuleuit">
+    <meta property="og:title" content="Kedai Kopi Senja | Workspace & Social Space Bandung">
     <meta property="og:description" content="Nikmati produktivitas pagi hari yang tenang dan kehangatan nongkrong sore hari dalam satu kedai kopi berkonsep Dual-Vibe.">
     <meta property="og:image" content="assets/kopi_senja_hero.png">
     <meta property="og:type" content="website">
@@ -162,7 +162,7 @@
                 <div class="section-header">
                     <span class="sub-title">Pilihan Terbaik</span>
                     <h2 class="main-title">Katalog Menu & Harga</h2>
-                    <p class="section-desc">Semua menu kami dibuat segar menggunakan bahan lokal berkualitas tinggi dengan harga ramah kantong mahasiswa Ciumbuleuit.</p>
+                    <p class="section-desc">Semua menu kami dibuat segar menggunakan bahan lokal berkualitas tinggi dengan harga ramah kantong mahasiswa dan pekerja.</p>
                 </div>
                 
                 <!-- Filter Tabs -->
@@ -172,12 +172,333 @@
                     <button class="filter-btn" data-filter="sore"><i class="fa-solid fa-moon"></i> Spesial Sore (Nongkrong)</button>
                 </div>
                 
-                <!-- Menu Grid (Filled by JS) -->
+                <!-- Menu Grid (Hardcoded untuk pemula) -->
                 <div class="menu-grid" id="menu-container">
-                    <!-- Placeholder loading state -->
-                    <div class="menu-loading">
-                        <i class="fa-solid fa-spinner fa-spin"></i> Memuat menu lezat...
-                    </div>
+                    
+                    <!-- 1. Es Kopi Susu Aren Klasik -->
+                    <article class="menu-card" data-category="all">
+                        <div class="menu-img-wrapper">
+                            <img src="assets/kopi_susu_aren.png" alt="Es Kopi Susu Aren Klasik" class="menu-img" loading="lazy">
+                            <span class="menu-card-badge">Terlaris</span>
+                        </div>
+                        <div class="menu-info">
+                            <div class="menu-title-row">
+                                <h4>Es Kopi Susu Aren Klasik</h4>
+                                <span class="menu-price">Rp 20.000</span>
+                            </div>
+                            <p>Perpaduan espresso arabika, susu cair segar, dan sirup gula aren murni khas parundangan. Pas buat nemenin belajar.</p>
+                            <a href="#booking" class="menu-cta-booking" data-product="Es Kopi Susu Aren Klasik">
+                                <i class="fa-solid fa-cart-plus"></i> Pesan Sekarang
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- 2. Kopi Hitam Tubruk -->
+                    <article class="menu-card" data-category="pagi">
+                        <div class="menu-img-wrapper">
+                            <img src="assets/kopi_tubruk.png" alt="Kopi Hitam Tubruk" class="menu-img" loading="lazy">
+                            <span class="menu-card-badge">Klasik</span>
+                        </div>
+                        <div class="menu-info">
+                            <div class="menu-title-row">
+                                <h4>Kopi Hitam Tubruk</h4>
+                                <span class="menu-price">Rp 15.000</span>
+                            </div>
+                            <p>Seduhan kopi hitam tradisional dari biji kopi lokal pilihan yang digiling segar. Pilihan mantap untuk fokus pagi hari.</p>
+                            <a href="#booking" class="menu-cta-booking" data-product="Kopi Hitam Tubruk">
+                                <i class="fa-solid fa-cart-plus"></i> Pesan Sekarang
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- 3. Cold Brew Latte -->
+                    <article class="menu-card" data-category="all">
+                        <div class="menu-img-wrapper">
+                            <img src="assets/cold_brew_bottle.png" alt="Cold Brew Latte" class="menu-img" loading="lazy">
+                            <span class="menu-card-badge">Favorit</span>
+                        </div>
+                        <div class="menu-info">
+                            <div class="menu-title-row">
+                                <h4>Cold Brew Latte</h4>
+                                <span class="menu-price">Rp 25.000</span>
+                            </div>
+                            <p>Kopi konsentrat hasil ekstraksi dingin selama 12 jam, dicampur susu segar dingin. Halus di lambung dan menyegarkan.</p>
+                            <a href="#booking" class="menu-cta-booking" data-product="Cold Brew Latte">
+                                <i class="fa-solid fa-cart-plus"></i> Pesan Sekarang
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- 4. Hot Matcha Latte -->
+                    <article class="menu-card" data-category="all">
+                        <div class="menu-img-wrapper">
+                            <img src="assets/matcha_latte.png" alt="Hot Matcha Latte" class="menu-img" loading="lazy">
+                            <span class="menu-card-badge">Non-Kopi</span>
+                        </div>
+                        <div class="menu-info">
+                            <div class="menu-title-row">
+                                <h4>Hot Matcha Latte</h4>
+                                <span class="menu-price">Rp 22.000</span>
+                            </div>
+                            <p>Bubuk teh hijau Jepang premium yang diseduh dengan susu cair hangat dan sedikit pemanis organik. Pilihan non-kopi penenang pikiran.</p>
+                            <a href="#booking" class="menu-cta-booking" data-product="Hot Matcha Latte">
+                                <i class="fa-solid fa-cart-plus"></i> Pesan Sekarang
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- 5. Roti Bakar Cokelat Keju -->
+                    <article class="menu-card" data-category="pagi">
+                        <div class="menu-img-wrapper">
+                            <img src="assets/roti_bakar.png" alt="Roti Bakar Cokelat Keju" class="menu-img" loading="lazy">
+                            <span class="menu-card-badge">Sarapan</span>
+                        </div>
+                        <div class="menu-info">
+                            <div class="menu-title-row">
+                                <h4>Roti Bakar Cokelat Keju</h4>
+                                <span class="menu-price">Rp 18.000</span>
+                            </div>
+                            <p>Roti panggang mentega dengan taburan meises cokelat melimpah dan parutan keju cheddar gurih di atasnya. Menu sarapan pas.</p>
+                            <a href="#booking" class="menu-cta-booking" data-product="Roti Bakar Cokelat Keju">
+                                <i class="fa-solid fa-cart-plus"></i> Pesan Sekarang
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- 6. Croissant Butter Cokelat -->
+                    <article class="menu-card" data-category="pagi">
+                        <div class="menu-img-wrapper">
+                            <img src="assets/croissant.png" alt="Croissant Butter Cokelat" class="menu-img" loading="lazy">
+                            <span class="menu-card-badge">Sarapan</span>
+                        </div>
+                        <div class="menu-info">
+                            <div class="menu-title-row">
+                                <h4>Croissant Butter Cokelat</h4>
+                                <span class="menu-price">Rp 20.000</span>
+                            </div>
+                            <p>Roti pastry renyah berlapis khas Prancis dengan mentega wangi dan isian lelehan cokelat hangat.</p>
+                            <a href="#booking" class="menu-cta-booking" data-product="Croissant Butter Cokelat">
+                                <i class="fa-solid fa-cart-plus"></i> Pesan Sekarang
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- New Morning Menu 1: American Breakfast -->
+                    <article class="menu-card" data-category="pagi">
+                        <div class="menu-img-wrapper">
+                            <img src="assets/american_breakfast.png" alt="American Breakfast Special" class="menu-img" loading="lazy">
+                            <span class="menu-card-badge">Baru</span>
+                        </div>
+                        <div class="menu-info">
+                            <div class="menu-title-row">
+                                <h4>American Breakfast Special</h4>
+                                <span class="menu-price">Rp 28.000</span>
+                            </div>
+                            <p>Dua telur mata sapi, sosis panggang, daging asap renyah, kentang goreng wedges, dan roti panggang mentega. Sarapan lengkap berenergi.</p>
+                            <a href="#booking" class="menu-cta-booking" data-product="American Breakfast Special">
+                                <i class="fa-solid fa-cart-plus"></i> Pesan Sekarang
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- New Morning Menu 2: Nasi Kuning -->
+                    <article class="menu-card" data-category="pagi">
+                        <div class="menu-img-wrapper">
+                            <img src="assets/nasi_kuning.png" alt="Nasi Kuning Campur Senja" class="menu-img" loading="lazy">
+                            <span class="menu-card-badge">Spesial</span>
+                        </div>
+                        <div class="menu-info">
+                            <div class="menu-title-row">
+                                <h4>Nasi Kuning Campur Senja</h4>
+                                <span class="menu-price">Rp 15.000</span>
+                            </div>
+                            <p>Nasi kuning wangi rempah dengan lauk suwiran ayam, irisan telur dadar, kering tempe manis, sambal goreng, dan kerupuk.</p>
+                            <a href="#booking" class="menu-cta-booking" data-product="Nasi Kuning Campur Senja">
+                                <i class="fa-solid fa-cart-plus"></i> Pesan Sekarang
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- New Morning Menu 3: Bubur Ayam -->
+                    <article class="menu-card" data-category="pagi">
+                        <div class="menu-img-wrapper">
+                            <img src="assets/bubur_ayam.png" alt="Bubur Ayam Bandung" class="menu-img" loading="lazy">
+                            <span class="menu-card-badge">Tradisional</span>
+                        </div>
+                        <div class="menu-info">
+                            <div class="menu-title-row">
+                                <h4>Bubur Ayam Bandung</h4>
+                                <span class="menu-price">Rp 12.000</span>
+                            </div>
+                            <p>Bubur beras lembut dengan kuah kaldu ayam gurih, disajikan dengan suwiran ayam melimpah, kacang kedelai, seledri, cakwe, dan kerupuk.</p>
+                            <a href="#booking" class="menu-cta-booking" data-product="Bubur Ayam Bandung">
+                                <i class="fa-solid fa-cart-plus"></i> Pesan Sekarang
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- New Morning Menu 4: Nasi Uduk -->
+                    <article class="menu-card" data-category="pagi">
+                        <div class="menu-img-wrapper">
+                            <img src="assets/nasi_uduk.png" alt="Nasi Uduk Gurih Lengkap" class="menu-img" loading="lazy">
+                            <span class="menu-card-badge">Favorit</span>
+                        </div>
+                        <div class="menu-info">
+                            <div class="menu-title-row">
+                                <h4>Nasi Uduk Gurih Lengkap</h4>
+                                <span class="menu-price">Rp 16.000</span>
+                            </div>
+                            <p>Nasi uduk harum santan pandan dengan lauk ayam goreng suwir, oreg tempe gurih, telur balado, sambal terasi, dan emping.</p>
+                            <a href="#booking" class="menu-cta-booking" data-product="Nasi Uduk Gurih Lengkap">
+                                <i class="fa-solid fa-cart-plus"></i> Pesan Sekarang
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- 7. Kentang Goreng Bumbu BBQ -->
+                    <article class="menu-card" data-category="sore">
+                        <div class="menu-img-wrapper">
+                            <img src="assets/kentang_goreng.png" alt="Kentang Goreng Bumbu BBQ" class="menu-img" loading="lazy">
+                            <span class="menu-card-badge">Camilan</span>
+                        </div>
+                        <div class="menu-info">
+                            <div class="menu-title-row">
+                                <h4>Kentang Goreng Bumbu BBQ</h4>
+                                <span class="menu-price">Rp 16.000</span>
+                            </div>
+                            <p>Kentang goreng renyah yang ditaburi bumbu BBQ gurih pedas manis. Teman nongkrong sore yang asyik.</p>
+                            <a href="#booking" class="menu-cta-booking" data-product="Kentang Goreng Bumbu BBQ">
+                                <i class="fa-solid fa-cart-plus"></i> Pesan Sekarang
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- 8. Pisang Goreng Madu -->
+                    <article class="menu-card" data-category="sore">
+                        <div class="menu-img-wrapper">
+                            <img src="assets/pisang_goreng.png" alt="Pisang Goreng Madu" class="menu-img" loading="lazy">
+                            <span class="menu-card-badge">Camilan</span>
+                        </div>
+                        <div class="menu-info">
+                            <div class="menu-title-row">
+                                <h4>Pisang Goreng Madu</h4>
+                                <span class="menu-price">Rp 14.000</span>
+                            </div>
+                            <p>Pisang kepok manis berbalut tepung renyah, digoreng matang lalu disiram madu asli. Nikmat disajikan hangat saat senja.</p>
+                            <a href="#booking" class="menu-cta-booking" data-product="Pisang Goreng Madu">
+                                <i class="fa-solid fa-cart-plus"></i> Pesan Sekarang
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- New Evening Menu 1: Tahu Lada Garam -->
+                    <article class="menu-card" data-category="sore">
+                        <div class="menu-img-wrapper">
+                            <img src="assets/tahu_lada_garam.png" alt="Tahu Cabai Lada Garam" class="menu-img" loading="lazy">
+                            <span class="menu-card-badge">Pedas</span>
+                        </div>
+                        <div class="menu-info">
+                            <div class="menu-title-row">
+                                <h4>Tahu Cabai Lada Garam</h4>
+                                <span class="menu-price">Rp 15.000</span>
+                            </div>
+                            <p>Potongan tahu sutra goreng tepung renyah yang ditumis dengan bawang putih cincang, cabai rawit pedas, lada, dan garam gurih.</p>
+                            <a href="#booking" class="menu-cta-booking" data-product="Tahu Cabai Lada Garam">
+                                <i class="fa-solid fa-cart-plus"></i> Pesan Sekarang
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- New Evening Menu 2: Nasi Goreng -->
+                    <article class="menu-card" data-category="sore">
+                        <div class="menu-img-wrapper">
+                            <img src="assets/nasi_goreng.png" alt="Nasi Goreng Kampung Senja" class="menu-img" loading="lazy">
+                            <span class="menu-card-badge">Klasik</span>
+                        </div>
+                        <div class="menu-info">
+                            <div class="menu-title-row">
+                                <h4>Nasi Goreng Kampung Senja</h4>
+                                <span class="menu-price">Rp 20.000</span>
+                            </div>
+                            <p>Nasi goreng bumbu tradisional dengan telur mata sapi, acar segar, kerupuk udang, dan irisan ayam goreng gurih.</p>
+                            <a href="#booking" class="menu-cta-booking" data-product="Nasi Goreng Kampung Senja">
+                                <i class="fa-solid fa-cart-plus"></i> Pesan Sekarang
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- New Evening Menu 3: Paket Ayam Goreng Sambal Bawang -->
+                    <article class="menu-card" data-category="sore">
+                        <div class="menu-img-wrapper">
+                            <img src="assets/ayam_sambal_bawang.png" alt="Paket Ayam Goreng Sambal Bawang" class="menu-img" loading="lazy">
+                            <span class="menu-card-badge">Pedas</span>
+                        </div>
+                        <div class="menu-info">
+                            <div class="menu-title-row">
+                                <h4>Paket Ayam Goreng Sambal Bawang</h4>
+                                <span class="menu-price">Rp 22.000</span>
+                            </div>
+                            <p>Ayam goreng renyah gurih disajikan dengan nasi hangat, lalapan segar, dan ulekan sambal bawang pedas nampol.</p>
+                            <a href="#booking" class="menu-cta-booking" data-product="Paket Ayam Goreng Sambal Bawang">
+                                <i class="fa-solid fa-cart-plus"></i> Pesan Sekarang
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- 9. Biji Kopi House Blend (250g) -->
+                    <article class="menu-card" data-category="all">
+                        <div class="menu-img-wrapper">
+                            <img src="assets/drip_bag_coffee.png" alt="Biji Kopi House Blend (250g)" class="menu-img" loading="lazy">
+                            <span class="menu-card-badge">Biji Kopi</span>
+                        </div>
+                        <div class="menu-info">
+                            <div class="menu-title-row">
+                                <h4>Biji Kopi House Blend (250g)</h4>
+                                <span class="menu-price">Rp 50.000</span>
+                            </div>
+                            <p>Racikan biji kopi arabika & robusta lokal untuk konsumsi harian di rumah, menghasilkan rasa tebal dan aroma cokelat.</p>
+                            <a href="#booking" class="menu-cta-booking" data-product="Biji Kopi House Blend (250g)">
+                                <i class="fa-solid fa-cart-plus"></i> Pesan Sekarang
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- 10. Biji Kopi Arabika Ciwidey (200g) -->
+                    <article class="menu-card" data-category="all">
+                        <div class="menu-img-wrapper">
+                            <img src="assets/drip_bag_coffee.png" alt="Biji Kopi Arabika Ciwidey (200g)" class="menu-img" loading="lazy">
+                            <span class="menu-card-badge">Biji Kopi</span>
+                        </div>
+                        <div class="menu-info">
+                            <div class="menu-title-row">
+                                <h4>Biji Kopi Arabika Ciwidey (200g)</h4>
+                                <span class="menu-price">Rp 60.000</span>
+                            </div>
+                            <p>Biji kopi single origin Arabika dari pegunungan Ciwidey Jawa Barat. Karakter rasa buah manis yang segar.</p>
+                            <a href="#booking" class="menu-cta-booking" data-product="Biji Kopi Arabika Ciwidey (200g)">
+                                <i class="fa-solid fa-cart-plus"></i> Pesan Sekarang
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- 11. Kopi Drip Bag Instan (5 Pcs) -->
+                    <article class="menu-card" data-category="all">
+                        <div class="menu-img-wrapper">
+                            <img src="assets/drip_bag_coffee.png" alt="Kopi Drip Bag Instan (5 Pcs)" class="menu-img" loading="lazy">
+                            <span class="menu-card-badge">Praktis</span>
+                        </div>
+                        <div class="menu-info">
+                            <div class="menu-title-row">
+                                <h4>Kopi Drip Bag Instan (5 Pcs)</h4>
+                                <span class="menu-price">Rp 35.000</span>
+                            </div>
+                            <p>Kemasan kopi saring siap seduh praktis untuk kamu yang sibuk atau sering bepergian.</p>
+                            <a href="#booking" class="menu-cta-booking" data-product="Kopi Drip Bag Instan (5 Pcs)">
+                                <i class="fa-solid fa-cart-plus"></i> Pesan Sekarang
+                            </a>
+                        </div>
+                    </article>
+
                 </div>
                 
                 <div class="menu-notice">
@@ -367,26 +688,26 @@
                     <div class="booking-info-container">
                         <div class="info-card">
                             <h3><i class="fa-solid fa-map-location-dot"></i> Hubungi & Kunjungi Kami</h3>
-                            <p class="map-lead">Kami berlokasi di daerah strategis dekat kampus UNPAR Ciumbuleuit, Bandung. Tempat pas buat nugas kuliah atau sekadar melepas lelah.</p>
+                            <p class="map-lead">Kami berlokasi di daerah strategis Kota Bandung. Tempat pas buat nugas, bekerja, atau sekadar melepas lelah.</p>
                             
                             <!-- Google Maps Iframe Placeholder styled beautifully -->
                             <div class="maps-wrapper">
                                 <iframe 
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.0543666289065!2d107.6048123147728!3d-6.884102995025449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6580f08cb3b%3A0xc34b711bc37043a5!2sJl.%20Ciumbuleuit%20No.94%2C%20Hegarmanah%2C%20Kec.%20Cidadap%2C%20Kota%20Bandung%2C%20Jawa%20Barat%2040141!5e0!3m2!1sid!2sid!4v1680000000000!5m2!1sid!2sid" 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15843.916892556555!2d107.6191228!3d-6.9034443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e63982570777%3A0xa01e5bd813de01e1!2sBandung%2C%20Bandung%20City%2C%20West%20Java!5e0!3m2!1sen!2sid!4v1680000000000!5m2!1sen!2sid" 
                                     width="100%" 
                                     height="220" 
                                     style="border:0;" 
                                     allowfullscreen="" 
                                     loading="lazy" 
                                     referrerpolicy="no-referrer-when-downgrade"
-                                    title="Peta Kedai Kopi Senja Ciumbuleuit">
+                                    title="Peta Kedai Kopi Senja Bandung">
                                 </iframe>
                             </div>
                             
                             <div class="contact-details">
                                 <div class="detail-item">
                                     <div class="detail-icon"><i class="fa-solid fa-location-arrow"></i></div>
-                                    <div class="detail-txt">Jl. Ciumbuleuit No. 94, Bandung, Jawa Barat (Dekat Kampus UNPAR)</div>
+                                    <div class="detail-txt">Jl. Merdeka No. 94, Bandung, Jawa Barat</div>
                                 </div>
                                 <div class="detail-item">
                                     <div class="detail-icon"><i class="fa-solid fa-clock"></i></div>
@@ -439,7 +760,7 @@
         
         <div class="footer-copyright">
             <div class="container copyright-container">
-                <p>&copy; 2026 Kedai Kopi Senja. All Rights Reserved. Kelompok 1 Bisnis Kreatif UNPAR.</p>
+                <p>&copy; 2026 Kedai Kopi Senja. All Rights Reserved. Kelompok 1 Bisnis Kreatif.</p>
                 <p class="anti-slop-badge"><i class="fa-solid fa-code"></i> Kode Kustom 100% Ditulis Tangan</p>
             </div>
         </div>
