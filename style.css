@@ -1287,9 +1287,11 @@ body.mode-sore .detail-txt a {
 
 .footer-container {
     display: grid;
-    grid-template-columns: 1.2fr 0.8fr 1fr;
-    gap: 48px;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 80px;
     padding-bottom: 60px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .footer-brand-info {
@@ -1396,8 +1398,9 @@ body.mode-sore .student-info .npm {
 
 .copyright-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    text-align: center;
     font-size: 0.75rem;
     color: var(--text-secondary);
 }
